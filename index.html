@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>運彩狗</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./public/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="header_nav">
+            <ul>
+                <li>
+                    <a href="" class="active">
+                        <img class="header_nav_active" src="./public/img/nav-acitve.svg" alt="">
+                        <span>回首頁</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="header_nav_active" src="./public/img/nav-acitve.svg" alt="">
+                        <span>儲值購買</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="header_nav_active" src="./public/img/nav-acitve.svg" alt="">
+                        <span>儲值流程</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="header_nav_active" src="./public/img/nav-acitve.svg" alt="">
+                        <span>聯絡資訊</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img class="header_nav_active" src="./public/img/nav-acitve.svg" alt="">
+                        <span>體壇新聞</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="header_member">
+            <ul>
+                <li><a href="">登入</a></li>
+                <li><a href="">註冊</a></li>
+            </ul>
+        </nav>
+        <div class="header_menu d-lg-none">
+            <div class="header_menu_bar bar-top"></div>
+            <div class="header_menu_bar bar-middle"></div>
+            <div class="header_menu_bar bar-bottom"></div>
+        </div>
+    </header>
+
+    <main>
+        <div class="banner">
+            <div class="swiper-container banner_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="banner_item"><img src="./public/img/banner-1.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner_item"><img src="./public/img/banner-2.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner_item"><img src="./public/img/banner-3.png" alt=""></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner_item"><img src="./public/img/banner-4.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner_gradient"></div>
+            <h1>運彩狗運動分析</h1>
+            <div class="banner_pagination"></div>
+        </div>
+
+        <div class="d-flex flex-wrap mainContent">
+            <div class="sidebar">
+                <div class="sidebar_news">
+                    <div class="sidebar_news_inner">
+                        <h2>體壇新聞</h2>
+                        <div class="sidebar_news_main">
+                            <a href="" class="sidebar_news_item">
+                                <span class="sidebar_news_title">運彩狗運動分析網-九運彩狗運動分析網-九運彩狗運動分析網-九</span>
+                                <span class="sidebar_news_date">12天前</span>
+                            </a>
+                            <a href="" class="sidebar_news_item">
+                                <span class="sidebar_news_title">運彩狗運動分析網-九</span>
+                                <span class="sidebar_news_date">12天前</span>
+                            </a>
+                            <a href="" class="sidebar_news_item">
+                                <span class="sidebar_news_title">運彩狗運動分析網-九</span>
+                                <span class="sidebar_news_date">12天前</span>
+                            </a>
+                            <a href="" class="sidebar_news_item">
+                                <span class="sidebar_news_title">運彩狗運動分析網-九</span>
+                                <span class="sidebar_news_date">12天前</span>
+                            </a>
+                            <a href="" class="sidebar_news_item">
+                                <span class="sidebar_news_title">運彩狗運動分析網-九</span>
+                                <span class="sidebar_news_date">12天前</span>
+                            </a>
+                        </div>
+                        <a href="" class="sidebar_news_more">更多新聞</a>
+                    </div>
+                </div>
+                <img class="w-100" src="./public/img/ad.png" alt="">
+            </div>
+            <div class="mainbar">
+                <ul class="nav nav-tabs analyze-tab" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="recent-tab" data-bs-toggle="tab" data-bs-target="#recent-tab-pane" type="button" role="tab" aria-controls="recent-tab-pane" aria-selected="true">
+                            <div class="analyze_icon">
+                                <img class="normal" src="./public/img/recent.svg" alt="">
+                                <img class="active" src="./public/img/recent-dark.svg" alt="">
+                            </div>
+                            <span>近期彩單</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="mlb-tab" data-bs-toggle="tab" data-bs-target="#mlb-tab-pane" type="button" role="tab" aria-controls="mlb-tab-pane" aria-selected="true">
+                            <div class="analyze_icon">
+                                <img class="normal" src="./public/img/baseball.svg" alt="">
+                                <img class="active" src="./public/img/baseball-dark.svg" alt="">
+                            </div>
+                            <span>MLB分析</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nba-tab" data-bs-toggle="tab" data-bs-target="#nba-tab-pane" type="button" role="tab" aria-controls="nba-tab-pane" aria-selected="true">
+                            <div class="analyze_icon">
+                                <img class="normal" src="./public/img/basketball.svg" alt="">
+                                <img class="active" src="./public/img/basketball-dark.svg" alt="">
+                            </div>
+                            <span>NBA分析</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="cpbl-tab" data-bs-toggle="tab" data-bs-target="#cpbl-tab-pane" type="button" role="tab" aria-controls="cpbl-tab-pane" aria-selected="true">
+                            <div class="analyze_icon">
+                                <img class="normal" src="./public/img/baseball.svg" alt="">
+                                <img class="active" src="./public/img/baseball-dark.svg" alt="">
+                            </div>
+                            <span>CPBL分析</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="npb-tab" data-bs-toggle="tab" data-bs-target="#npb-tab-pane" type="button" role="tab" aria-controls="npb-tab-pane" aria-selected="true">
+                            <div class="analyze_icon">
+                                <img class="normal" src="./public/img/baseball.svg" alt="">
+                                <img class="active" src="./public/img/baseball-dark.svg" alt="">
+                            </div>
+                            <span>NPB分析</span>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="nhl-tab" data-bs-toggle="tab" data-bs-target="#nhl-tab-pane" type="button" role="tab" aria-controls="nhl-tab-pane" aria-selected="true">
+                            <div class="analyze_icon">
+                                <img class="normal" src="./public/img/hockey.svg" alt="">
+                                <img class="active" src="./public/img/hockey-dark.svg" alt="">
+                            </div>
+                            <span>NHL分析</span>
+                        </button>
+                    </li>
+                </ul>
+                <div class="analyze">
+                    <div class="analyze_inner">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="recent-tab-pane" role="tabpanel" aria-labelledby="recent-tab" tabindex="0">
+                                <table class="analyze_table">
+                                    <tr>
+                                        <th>專案名稱</th>
+                                        <th>比賽日</th>
+                                        <th>讓分隊伍</th>
+                                        <th>盤口</th>
+                                        <th>受讓隊伍</th>
+                                        <th>運彩狗預測推薦</th>
+                                        <th>比分</th>
+                                        <th>結果</th>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td>波特蘭拓荒者</td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/win.svg" alt=""></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="mlb-tab-pane" role="tabpanel" aria-labelledby="mlb-tab" tabindex="0">
+                                <table class="analyze_table">
+                                    <tr>
+                                        <th>專案名稱</th>
+                                        <th>比賽日</th>
+                                        <th>讓分隊伍</th>
+                                        <th>盤口</th>
+                                        <th>受讓隊伍</th>
+                                        <th>運彩狗預測推薦</th>
+                                        <th>比分</th>
+                                        <th>結果</th>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td>波特蘭拓荒者</td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/win.svg" alt=""></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="nba-tab-pane" role="tabpanel" aria-labelledby="nba-tab" tabindex="0">
+                                <table class="analyze_table">
+                                    <tr>
+                                        <th>專案名稱</th>
+                                        <th>比賽日</th>
+                                        <th>讓分隊伍</th>
+                                        <th>盤口</th>
+                                        <th>受讓隊伍</th>
+                                        <th>運彩狗預測推薦</th>
+                                        <th>比分</th>
+                                        <th>結果</th>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td>波特蘭拓荒者</td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/win.svg" alt=""></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="cpbl-tab-pane" role="tabpanel" aria-labelledby="cpbl-tab" tabindex="0">
+                                <table class="analyze_table">
+                                    <tr>
+                                        <th>專案名稱</th>
+                                        <th>比賽日</th>
+                                        <th>讓分隊伍</th>
+                                        <th>盤口</th>
+                                        <th>受讓隊伍</th>
+                                        <th>運彩狗預測推薦</th>
+                                        <th>比分</th>
+                                        <th>結果</th>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td>波特蘭拓荒者</td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/win.svg" alt=""></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="npb-tab-pane" role="tabpanel" aria-labelledby="npb-tab" tabindex="0">
+                                <table class="analyze_table">
+                                    <tr>
+                                        <th>專案名稱</th>
+                                        <th>比賽日</th>
+                                        <th>讓分隊伍</th>
+                                        <th>盤口</th>
+                                        <th>受讓隊伍</th>
+                                        <th>運彩狗預測推薦</th>
+                                        <th>比分</th>
+                                        <th>結果</th>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td>波特蘭拓荒者</td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/win.svg" alt=""></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="nhl-tab-pane" role="tabpanel" aria-labelledby="nhl-tab" tabindex="0">
+                                <table class="analyze_table">
+                                    <tr>
+                                        <th>專案名稱</th>
+                                        <th>比賽日</th>
+                                        <th>讓分隊伍</th>
+                                        <th>盤口</th>
+                                        <th>受讓隊伍</th>
+                                        <th>運彩狗預測推薦</th>
+                                        <th>比分</th>
+                                        <th>結果</th>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td>波特蘭拓荒者</td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/wait.svg" alt=""></td>
+                                    </tr>
+                                    <tr>
+                                        <td>旺旺冰球</td>
+                                        <td>2025-03-05</td>
+                                        <td>西雅圖海怪</td>
+                                        <td>1+70</td>
+                                        <td>明尼蘇達荒野</td>
+                                        <td><a href="" class="analyze_table_btn">點擊購買</a></td>
+                                        <td>102:119</td>
+                                        <td><img class="analyze_table_result" src="./public/img/win.svg" alt=""></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container d-lg-flex align-items-end justify-content-between">
+            <div class="footer_info">
+                <div class="footer_info_title">
+                    <h3>聯絡資訊</h3>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <img class="footer_info_pic" src="./public/img/line.png" alt="">
+                    <img class="footer_info_pic" src="./public/img/wechat.png" alt="">
+                </div>
+            </div>
+            <p class="footer_text">
+                網站內容屬資訊性質，提供資料僅供瀏覽者作參考用途，切勿參與賭博觸犯法例，請勿以身試法。<br>
+                本站提供您的內容請勿任意轉載或複製。提醒您：進入本站、參與運動彩劵者需年滿20歲，未滿者不得加入行使任何會員之權利
+            </p>
+        </div>
+    </footer>
+    
+
+    <script src="./public/js/jquery/jquery.min.js"></script>
+    <script src="./public/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./public/js/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/js/common.js"></script>
+
+    <script>
+        var swiperBanner = new Swiper(".banner_swiper", {
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: ".banner_pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            speed: 1000,
+        })
+    </script>
+</body>
+</html>
