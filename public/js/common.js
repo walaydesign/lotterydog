@@ -3,3 +3,15 @@ $(".header_menu").click(function() {
     $(".header_nav").toggleClass("active");
 })
 
+nav();
+function nav() {
+    $(".header_nav li").each(function() {
+        if($(this).find("a").hasClass("active")) {
+            let index = $(this).index();
+            if(index => 1) {
+                let preIndex = index - 1;
+                $(".header_nav li").eq(preIndex).find("a").addClass("noline");
+            }
+        }
+    })
+}
