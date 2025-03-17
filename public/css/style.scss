@@ -296,6 +296,52 @@ input, button, select {
             left: 0;
         }
     }
+    &_text {
+        position: absolute;
+        width: 85%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        p {
+            font-size: 34px;
+            color: #fff;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.7;
+            text-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            letter-spacing: 0.05em;
+        }
+        &_green {
+            background: linear-gradient(to right, #41FF9A 0%, #00B97B 100%);
+            background-clip: text;
+            color: transparent;
+        }
+        &_red {
+            background: linear-gradient(to right, #FF8383 0%, #FF4C4C 100%);
+            background-clip: text;
+            color: transparent;
+        }
+        &_gold {
+            background: $gradient-3;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+    &_title {
+        padding: 5px 30px 10px;
+        background: $gradient-btn;
+        transform: skewX(-15deg);
+        width: fit-content;
+        margin-bottom: 35px;
+        span {
+            display: block;
+            font-size: 30px;
+            font-weight: 700;
+            color: #fff;
+            text-shadow: 0 4px 4px rgba(0,0,0,0.25);
+            transform: skewX(15deg);
+        }
+    }
     &_pagination {
         display: flex;
         align-items: center;
@@ -374,6 +420,17 @@ input, button, select {
         h1 {
             font-size: 60px;
         }
+        &_title {
+            margin-bottom: 20px;
+            span {
+                font-size: 18px;
+            }
+        }
+        &_text {
+            p {
+                font-size: 22px;
+            }
+        }
     }
     @media screen and (max-width: 575px) {
         h1 {
@@ -381,6 +438,27 @@ input, button, select {
         }
         &_pagination {
             bottom: 10px;
+        }
+        &_text {
+            width: 100%;
+            padding: 0 20px;
+            top: inherit;
+            bottom: 20%;
+            left: 0;
+            transform: none;
+            p {
+                font-size: 18px;
+            }
+        }
+        &_item {
+            padding-bottom: 120%;
+        }
+        &_title {
+            padding-left: 20px;
+            padding-right: 20px;
+            span {
+                font-size: 14px;
+            }
         }
     }
 }
@@ -596,7 +674,10 @@ input, button, select {
     &_inner {
         background-color: $brown-bg;
         border-radius: 0 0 28px 28px;
-        padding: 20px;
+        padding: 20px 20px 60px;
+        // overflow-x: auto;
+    }
+    &_tabContent {
         overflow-x: auto;
     }
     &_table {
@@ -638,9 +719,14 @@ input, button, select {
             width: 37px;
         }
     }
+    &_hint {
+        text-align: center;
+        font-size: 14px;
+        color: #fff;
+    }
     @media screen and (max-width: 991px) {
         &_inner {
-            padding: 20px 15px;
+            padding: 20px 15px 60px;
         }
     }
 }
@@ -949,6 +1035,9 @@ input, button, select {
             }
         }
     }
+    .sidebar_news_inner {
+        padding-bottom: 60px;
+    }
     @media screen and (max-width: 575px) {
         &_detail {
             h1 {
@@ -1161,5 +1250,58 @@ input, button, select {
                 padding: 0;
             }
         }
+    }
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 40px auto 0;
+    gap: 15px;
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        font-family: $font-karla;
+        border: 1px solid rgba(255,255,255,0.8);
+        color: rgba(255,255,255,0.8);
+        border-radius: 50%;
+        transition: $transition;
+        &.active, &:hover {
+            background-color: #fff;
+            border-color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+            span {
+                background: $gradient-btn;
+                background-clip: text;
+                color: transparent;
+                font-style: italic;
+                font-weight: 900;
+            }
+        }
+    }
+    &_arrow {
+        border: 0 !important;
+        svg {
+            width: 20px;
+            height: 20px;
+            path {
+                stroke: #fff;
+                transition: $transition;
+            }
+        }
+        &:hover {
+            svg {
+                path {
+                    stroke: $brown-bg;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 575px) {
+        gap: 10px;
     }
 }
