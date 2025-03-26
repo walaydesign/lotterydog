@@ -154,6 +154,8 @@ input, button, select {
             display: flex;
             align-items: center;
             justify-content: center;
+            position: relative;
+            width: 100%;
             a {
                 display: block;
                 width: 65px;
@@ -187,6 +189,15 @@ input, button, select {
                     }
                 }
             }
+        }
+        &_name {
+            color: #fff;
+            position: absolute;
+            bottom: calc(100% + 15px);
+            left: 0;
+            width: 100%;
+            font-size: 12px;
+            text-align: center;
         }
         &.loginActive {
             background-image: url(../img/nav-small-active.svg);
@@ -241,7 +252,7 @@ input, button, select {
     }
     @media screen and (max-width: 991px) {
         justify-content: flex-end;
-        padding: 15px 20px;
+        padding: 15px;
         &_nav {
             position: fixed;
             width: 100%;
@@ -276,6 +287,17 @@ input, button, select {
         &_member {
             position: static;
             transform: none;
+            ul {
+                position: static;
+            }
+            &_name {
+                bottom: inherit;
+                top: 50%;
+                left: 15px;
+                transform: translateY(-50%);
+                text-align: left;
+                width: calc(100% - 160px - 27px - 20px - 30px);
+            }
         }
     }
 }

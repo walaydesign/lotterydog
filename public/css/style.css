@@ -178,6 +178,8 @@ input, button, select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
 .header_member ul a {
@@ -209,6 +211,16 @@ input, button, select {
 
 .header_member ul li:last-child a::after {
   display: none;
+}
+
+.header_member_name {
+  color: #fff;
+  position: absolute;
+  bottom: calc(100% + 15px);
+  left: 0;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
 }
 
 .header_member.loginActive {
@@ -274,7 +286,7 @@ input, button, select {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    padding: 15px 20px;
+    padding: 15px;
   }
   .header_nav {
     position: fixed;
@@ -315,6 +327,18 @@ input, button, select {
     position: static;
     -webkit-transform: none;
             transform: none;
+  }
+  .header_member ul {
+    position: static;
+  }
+  .header_member_name {
+    bottom: inherit;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    text-align: left;
+    width: calc(100% - 160px - 27px - 20px - 30px);
   }
 }
 
