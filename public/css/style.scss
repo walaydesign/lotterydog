@@ -585,6 +585,9 @@ input, button, select {
             }
         }
     }
+    >img {
+        border-radius: 10px;
+    }
     @media screen and (max-width: 1300px) {
         width: 250px;
     }
